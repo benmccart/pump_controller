@@ -22,8 +22,6 @@
 #include <chrono>
 #include <cstdint>
 
-#include <RTC.h>
-
 namespace chrono
 {
     struct monotonic_time_t
