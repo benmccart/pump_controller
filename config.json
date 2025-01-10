@@ -1,0 +1,51 @@
+{
+    "modbus_baud" : 19200,
+    "modbus_id" : 1,
+    "init_registers" : 
+    [
+        {
+            "reg" : 2,
+            "value" : 3
+        },
+        {
+            "reg" : 5,
+            "value" : 2
+        }
+    ],
+    "run_register" : 9473,
+    "frequency_register" : 9474,
+    "flood_input" : 
+    {
+        "analog_input" : "A0"
+    },
+    "pressure_input" :
+    {
+        "register" : 3098
+    },
+    "stepper_levels" : 
+    {
+        "stop" :
+        {
+            "pressure" : 840,
+            "frequency" : 0
+
+        },
+        "fill" :
+        {
+            "pressure" : 790,
+            "frequency" : 5400
+        },
+        "start" :
+        {
+            "pressure" : 765,
+            "frequency" : 6000
+        }
+    },
+    "run_args" :
+    {
+        "run" : 1,
+        "stop" : 0
+    },
+    "flood_trigger_value" : 500,
+    "flood_timeout" : 60
+}
